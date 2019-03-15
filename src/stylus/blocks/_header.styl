@@ -15,8 +15,6 @@
     display flex
     justify-content: space-between
     align-items: center
-  &__close
-    display none
   &__title 
     font-size 1.6rem
     color #002B72
@@ -30,12 +28,13 @@
       display none
   &__close
     position absolute
+    display none
     top 2rem
     right 2rem
     &:before
       content: '\f00d'
       font-family: 'FontAwesome'
-      font-size: 8px
+      font-size: 6rem
   &__li
     font-family: Roboto
     font-weight: 400

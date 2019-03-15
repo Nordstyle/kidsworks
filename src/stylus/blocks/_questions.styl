@@ -1,0 +1,43 @@
+.questions
+  padding: 2.2rem 4rem;
+  border: .4rem solid #0AF;
+  position: relative;
+  margin-bottom: 8rem;
+  height 100%
+  &:before
+    content: '';
+    position: absolute;
+    height: calc(100% + 4.4rem);
+    width: calc(100% - 4.4rem);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-transform: translate(2rem,-2.6rem);
+    transform: translate(2rem,-2.6rem);
+    border: .4rem solid rgba(#0AF, 0.5);
+  &__block
+    margin-bottom 1rem
+  &__section
+    padding-bottom 8rem
+  &__title
+    margin 0 0 4rem
+  &__item 
+    width 100%
+    padding: 1rem
+    background-color rgba(#0AF, 0.24)
+    margin-bottom 1rem
+    font-size 1.4rem
+    & span
+      font-weight 600
+  &__question
+    margin-bottom 0.4rem
+  &__footer 
+      display flex
+      justify-content: center
+  &__wrapper 
+    margin-bottom 3rem
+
+@media (max-width: 667px)
+  .questions
+    &__item:nth-of-type(2n + 1)
+      display none

@@ -1,0 +1,96 @@
+.mobile
+  &__nav
+    justify-content: center
+    align-items: center
+    display: none
+  &__menu
+    margin-right 2rem
+    cursor: pointer
+  // &__menu
+  //   display block
+  //   position fixed
+  //   width 100%
+  //   height 100vh
+  //   z-index 900
+  //   left 0
+  //   top 0
+  //   transform translateX(-100%);
+  //   background-color rgba(#0AF, 0.6);
+  //   transition 0.3s
+  &__content 
+    height 100%
+    display flex
+    justify-content space-between
+    flex-direction: column
+  &__header 
+    display flex
+    justify-content space-between
+    align-items center
+    padding: 1rem
+    background-color rgba(255, 255, 255, 0.9)
+    & a 
+      color #363636
+      & span
+        color #363636
+    & .header__tel 
+      margin-bottom 0
+  &__close 
+    & img
+      width 2rem  
+      height 2rem
+      object-fit: contain
+  &__icon
+    display none
+    position fixed
+    left 0.6rem
+    top 1.8rem
+    cursor pointer
+    z-index 700
+    padding 1rem 1rem 0.7rem
+    background-color rgba(#0AF, 0.55);
+  &__nav
+    justify-content: center
+    align-items: center
+    display: none
+  &__menu
+    margin-right 2rem
+    cursor: pointer
+  &__items 
+    height 100%
+    display flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: flex-start
+    padding 1rem
+    & li 
+      list-style-type: none;
+      & a 
+        display block
+        margin-bottom 1rem
+        color white
+        font-size 2.4rem
+  &__footer 
+    display flex
+    justify-content center
+    padding: 1rem
+    background-color rgba(255, 255, 255, 0.9)
+  &__sub 
+    margin-left 2rem
+  &__callback
+    color #363636
+    border-bottom 1px dotted #363636
+    &:before 
+      color #363636
+
+@media (max-width:700px)
+  .mobile
+    &__nav
+      display flex
+// @media (max-width:700px)
+//   .mobile
+//     &__icon 
+//       display block
+// @media (max-width:1024px)
+//   .mobile
+//     &__nav
+//       display flex

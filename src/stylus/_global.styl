@@ -31,6 +31,8 @@ html
   padding 1.4rem 4rem
   border-radius 0.5rem
   transition 0.3s
+  outline: none
+  border none
   cursor pointer
   &:hover
     background-color #0AF - 15%
@@ -38,6 +40,12 @@ html
     padding: 1.2rem 3rem;
     
 .section
+  &__heading 
+    font-size 3.4rem
+    font-family: 'Hammersmith One', sans-serif;
+    position relative
+    margin 2rem 0
+    text-align: center
   &__title 
     font-size 3.4rem
     font-family: 'Hammersmith One', sans-serif;
@@ -79,8 +87,7 @@ html
       width 100%
       position absolute
       height 1rem
-      border-top 1px solid #0AF
-      border-bottom 1px solid #0AF
+      border-top 3px solid #0AF
   &__background 
     background: #f6f6f6
 .policy__callback
@@ -88,7 +95,7 @@ html
   cursor pointer
 
 .politic__open 
-  color rgb(173, 2, 1)
+  color #0AF
   cursor pointer
 
 .call__wrapper .tingle-modal-box__content
