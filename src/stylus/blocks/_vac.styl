@@ -1,0 +1,65 @@
+.vac
+  &__items 
+    display flex
+    justify-content: space-around
+    flex-wrap wrap
+    align-items: center
+
+.cube 
+  margin: 3rem auto;
+  position: relative;
+  width: 30rem;
+  height: 10rem;
+  font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif;  
+  text-shadow: 1px 1px 1px #383737;
+  color: #FFF;
+  text-align:center;
+  cursor: pointer
+
+.cube h1 
+  font-size: 3rem;
+  font-weight: bold;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem
+
+.cube h2 
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 1.6rem 0 0.2rem;
+
+.cube p 
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  margin: 0;
+
+.default-state, .active-state 
+  height: 10rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: transform 0.4s ease;
+  transform-origin: center center -5rem;
+  -webkit-transform-origin: center center -5rem;
+  width: 100%;
+
+.default-state 
+  background-color: #03a9f4;
+  transform: perspective(100rem) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+
+.active-state 
+  background: #1976d2;
+  transform: perspective(100rem) rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
+
+.cube:hover .default-state 
+  transform: perspective(100rem) rotateX(90deg) rotateY(0) rotateZ(0deg);
+
+.cube:hover .active-state 
+  z-index: 99999;
+  transform: perspective(100rem) rotateX(0deg) rotateY(0deg) rotateZ(0);
+
+#vac
+  margin-bottom 0

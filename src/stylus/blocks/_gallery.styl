@@ -1,0 +1,46 @@
+.DoubleSlider
+  position relative
+  &__top
+    display flex
+    justify-content space-between
+    align-items center
+    margin-bottom 2rem
+  &__buttons
+    position absolute
+    right 0 
+    top 0
+    z-index 20
+  & .swiper-container
+    margin-bottom -3px !important
+  &__heading
+    font-size: 3.8rem
+  & img
+    width 100%
+    height 27rem
+    object-fit: cover
+  & .swiper-slide 
+    cursor pointer
+  & .swiper-slide::after
+    content: '\f055'
+    font-family: 'FontAwesome'
+    display flex
+    justify-content center
+    align-items center
+    font-size: 3.8rem
+    color white
+    position absolute
+    top 0
+    left 0
+    right 0
+    bottom 0
+    background-color rgba(#0AF,.5)
+    transition: opacity .3s
+    will-change: opacity
+    opacity 0
+  & .swiper-slide:hover::after
+    opacity 1
+
+.DoubleSlider .DoubleSlider__button_left, .DoubleSlider .DoubleSlider__button_right
+  background: none
+  width 62px
+  height 62px

@@ -7,7 +7,7 @@
 
 html
   font-size: 10px
-  font-family Roboto
+  font-family: 'Hammersmith One', sans-serif;
   color #363636
   font-weight normal
 
@@ -20,6 +20,72 @@ html
   margin 0 auto
   padding-left 0.6rem
   padding-right 0.6rem
+
+.button
+  font-family: Roboto
+  font-weight: 700
+  font-size 1.6rem
+  color white
+  box-shadow 0 0.8rem 2rem RGBA(0,0,0,0.1)
+  background-color #0AF
+  padding 1.4rem 4rem
+  border-radius 0.5rem
+  transition 0.3s
+  cursor pointer
+  &:hover
+    background-color #0AF - 15%
+  &__mini
+    padding: 1.2rem 3rem;
+    
+.section
+  &__title 
+    font-size 3.4rem
+    font-family: 'Hammersmith One', sans-serif;
+    position relative
+    margin-bottom 2rem
+    margin-top: 2rem
+    padding-left 2rem
+    &:before 
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      background: #0AF
+      bottom: 0;
+      width: 5px;
+      border-radius: 2px;
+      box-shadow: inset 0 1px 1px rgba(0,0,0,0.5), 0 1px 1px rgba(255,255,255,0.3);
+    &_left 
+      text-align: left
+      margin 15px 0
+      margin-bottom 5rem
+      &:before
+        display none
+      &:after
+        display none
+  &__text
+    font-size 1.6rem  
+    line-height 2rem
+    &_margin
+      margin-bottom 1rem
+  &__block
+    padding 3rem 0 4rem
+    margin-bottom 2rem
+  &__separator
+    &:after 
+      content ''
+      top -4rem
+      left 0 
+      width 100%
+      position absolute
+      height 1rem
+      border-top 1px solid #0AF
+      border-bottom 1px solid #0AF
+  &__background 
+    background: #f6f6f6
+.policy__callback
+  color #0AF
+  cursor pointer
 
 .politic__open 
   color rgb(173, 2, 1)
