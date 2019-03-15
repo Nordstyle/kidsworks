@@ -28,6 +28,9 @@ const swiper = new Swiper('.mainSlider .swiper-container', {
   },
   breakpoints: {
     // when window width is <= 320px
+    1000: {
+      slidesPerView: 1.2
+    },
     660: {
       slidesPerView: 1
     },
@@ -50,6 +53,9 @@ const options = {
     nextEl: '.DoubleSlider .swiper-button-prev'
   },
   breakpoints: {
+    1000: {
+      slidesPerView: 4,
+    },
     667: {
       slidesPerView: 2,
     }
