@@ -1,0 +1,32 @@
+{
+  "name": "kidsworks",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "AnatoliyZ",
+  "license": "MIT",
+  "scripts": {
+    "dev": "gulp & browser-sync start -s ./dest -f ./dest",
+    "blocks": "node ./make-blocks.js"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.3.1",
+    "@babel/register": "^7.0.0",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-stylus": "^2.7.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^4.3.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2"
+  }
+}
