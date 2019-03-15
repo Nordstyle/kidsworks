@@ -255,3 +255,7 @@ var sendMail = (selector) => {
     body.style.overflow = "";
   }
 }()
+
+
+lightGallery(document.querySelector('.DoubleSlider__slider1 .swiper-wrapper'));
+lightGallery(document.querySelector('.DoubleSlider__slider2 .swiper-wrapper'));
