@@ -1,5 +1,5 @@
 <?php
-$to      = 'zolotukhinwebpr@mail.ru';
+$to      = 'voinskiy_souz@mail.ru';
 $subject = 'Обратная связь с сайта "Биржа труда для детей и молодежи"';
 $preferences = ['input-charset' => 'UTF-8', 'output-charset' => 'UTF-8'];
 $encoded_subject = iconv_mime_encode('Subject', $subject, $preferences);
